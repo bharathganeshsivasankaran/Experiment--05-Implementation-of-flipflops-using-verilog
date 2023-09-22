@@ -151,5 +151,9 @@ endmodule
 ### TIMING DIAGRAM FOR SR
 ![Screenshot 2023-09-15 094304](https://github.com/bharathganeshsivasankaran/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119478098/25229c82-7242-41cd-ab7a-e5e41989fd19)
 ### TIMING DIAGRAM FOR JK
-![Screenshot 2023-09-22 091018](https://github.com/bharathganeshsivasankaran/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119478098/cf7bc6a0-290f-42a3-a677-df59b44fef44)
+![Screenshot 2023-09-22 095451](https://github.com/bharathganeshsivasankaran/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119478098/1715e62c-f831-403c-9d75-36e245bc648a)
+### TRUTH TABLE
+![WhatsApp Image 2023-09-22 at 09 55 59](https://github.com/bharathganeshsivasankaran/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119478098/26c7a5e0-bfdf-46d5-9e85-27070a53d72e)
+
+
 ### RESULTS 
