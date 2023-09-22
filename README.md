@@ -1,7 +1,10 @@
 # Experiment--05-Implementation-of-flipflops-using-verilog
-### AIM: To implement all the flipflops using verilog and validating their functionality using their functional tables
-### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
-### SOFTWARE REQUIRED:   Quartus prime
+### AIM: 
+To implement all the flipflops using verilog and validating their functionality using their functional tables
+### HARDWARE REQUIRED:  
+PC, Cyclone II , USB flasher
+### SOFTWARE REQUIRED:   
+Quartus prime
 ### THEORY 
 SR Flip-Flop
 SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure.
@@ -102,39 +105,51 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
 ### Procedure
-/* write all the steps invloved */
-
-
-
 ### PROGRAM 
-/*
+```
+
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: BHARATHGANESH S
+RegisterNumber:  212222230022
 
-
-
-
-
-
+```
+### SR PROGRAM
+```
+module exp5(s,r,q,qbar,clk);
+input s,r,clk;
+output reg q,qbar;
+initial q = 0;
+initial qbar = 1;
+always @(posedge clk)
+begin  
+q = s|(q&(~r));
+qbar = r|(qbar&(~s));
+end 
+endmodule
+```
+### JK PROGRAM
+```
+module exp5b(J,K,clk,Q,Qbar);
+input J,K,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=(J&(~Q))|((~K)&Q);
+Qbar=((~J)&(Qbar))|K&(~Qbar);
+end
+endmodule
+```
 ### RTL LOGIC FOR FLIPFLOPS 
-
-
-
-
-
-
-
-
-
+### RTL FOR SR
+![Screenshot 2023-09-15 093230](https://github.com/bharathganeshsivasankaran/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119478098/2e7f6f32-329b-4b20-b35e-a6019016c628)
+### RTL FOR JK
+![Screenshot 2023-09-22 090549](https://github.com/bharathganeshsivasankaran/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119478098/403cce40-f9f0-480b-87d6-6c8647284524)
 ### TIMING DIGRAMS FOR FLIP FLOPS 
-
-
-
-
-
-
-
-
+### TIMING DIAGRAM FOR SR
+![Screenshot 2023-09-15 094304](https://github.com/bharathganeshsivasankaran/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119478098/25229c82-7242-41cd-ab7a-e5e41989fd19)
+### TIMING DIAGRAM FOR JK
+![Screenshot 2023-09-22 091018](https://github.com/bharathganeshsivasankaran/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119478098/cf7bc6a0-290f-42a3-a677-df59b44fef44)
 ### RESULTS 
