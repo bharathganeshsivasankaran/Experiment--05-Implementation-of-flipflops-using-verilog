@@ -1,4 +1,3 @@
-![image](https://github.com/bharathganeshsivasankaran/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119478098/e004f3bd-c7ff-4b6a-9dac-a66b3117486d)
 ### Experiment--05-Implementation-of-flipflops-using-verilog
 ### AIM: 
 To implement all the flipflops using verilog and validating their functionality using their functional tables
